@@ -1,5 +1,5 @@
 *:focus {
-    outline: none;
+    outline: 1px solid transparent;
 }
 * {
     transition: .3s;
@@ -12,4 +12,10 @@ a {
 }
 html {
     scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
 }

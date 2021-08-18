@@ -1,1 +1,87 @@
 @import './resets';
+
+body {
+    font-family: "Quicksand";
+    letter-spacing: .07em;
+}
+header,aside {
+    outline: 1px solid blue;
+}
+aside {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header, main {
+    display: none;
+}
+
+.regular {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+aside {
+    color: white;
+    background: linear-gradient(to bottom, hsl(265, 71%, 37%), hsl(265, 86%, 16%));
+
+    font-size: 1px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .hambuger-close  {
+        width: max-content;
+        padding: 10px;
+        padding-left: 12px;
+        position: absolute;
+        right: 5%;
+        top: 3%;
+
+    }
+
+    .profile-photo{
+        margin-top: 100px;
+
+        border-radius: 100%;
+        border: 2px solid white;
+        padding: 15px;
+        width: 180px;
+        height: 180px;
+
+    }
+
+    .contact-details {
+
+        ul {
+
+            list-style-type: none;
+            margin-top: 50px;
+
+            li {
+                width: max-content;
+                margin-bottom: 5px;
+
+                a {
+                    display: inline-block;
+                    color: white;
+                    text-align: center;
+                    width: max-content;
+                }
+
+                i {
+                    padding: 10px;
+                }
+
+            }
+        }
+    }
+
+
+
+}

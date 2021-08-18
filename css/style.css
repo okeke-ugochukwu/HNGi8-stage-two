@@ -1,5 +1,5 @@
 *:focus {
-  outline: none;
+  outline: 1px solid transparent;
 }
 
 * {
@@ -17,4 +17,99 @@ a {
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Quicksand";
+  letter-spacing: .07em;
+}
+
+header, aside {
+  outline: 1px solid blue;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+header, main {
+  display: none;
+}
+
+.regular {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+aside {
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#531ba1), to(#23064c));
+  background: linear-gradient(to bottom, #531ba1, #23064c);
+  font-size: 1px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+aside .hambuger-close {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
+  padding-left: 12px;
+  position: absolute;
+  right: 5%;
+  top: 3%;
+}
+
+aside .profile-photo {
+  margin-top: 100px;
+  border-radius: 100%;
+  border: 2px solid white;
+  padding: 15px;
+  width: 180px;
+  height: 180px;
+}
+
+aside .contact-details ul {
+  list-style-type: none;
+  margin-top: 50px;
+}
+
+aside .contact-details ul li {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 5px;
+}
+
+aside .contact-details ul li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+aside .contact-details ul li i {
+  padding: 10px;
 }
