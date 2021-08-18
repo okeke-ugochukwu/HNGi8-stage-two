@@ -47,26 +47,21 @@ header, main {
 }
 
 .regular {
-  font-size: 16px;
+  font-size: .9em;
   font-weight: 400;
 }
 
 aside {
+  padding-left: 10%;
+  min-width: 280px;
   color: white;
+  width: 90%;
+  max-width: 400px;
   background: -webkit-gradient(linear, left top, left bottom, from(#531ba1), to(#23064c));
   background: linear-gradient(to bottom, #531ba1, #23064c);
+  padding-top: 100px;
   font-size: 1px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 aside .hambuger-close {
@@ -81,36 +76,41 @@ aside .hambuger-close {
 }
 
 aside .profile-photo {
-  margin-top: 100px;
   border-radius: 100%;
   border: 2px solid white;
   padding: 15px;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
+}
+
+aside .contact-details {
+  width: 100%;
 }
 
 aside .contact-details ul {
+  width: 100%;
   list-style-type: none;
   margin-top: 50px;
 }
 
 aside .contact-details ul li {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0px 10px;
   margin-bottom: 5px;
 }
 
 aside .contact-details ul li a {
   display: inline-block;
+  text-align: left;
   color: white;
   text-align: center;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 aside .contact-details ul li .font-awesome {
-  margin-right: 15px;
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 10px;
 }
