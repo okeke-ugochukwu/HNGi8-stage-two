@@ -111,6 +111,6 @@ aside .contact-details ul li a {
   width: max-content;
 }
 
-aside .contact-details ul li i {
+aside .contact-details ul li .font-awesome {
   margin-right: 15px;
 }
