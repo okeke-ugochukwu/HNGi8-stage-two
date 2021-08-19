@@ -94,10 +94,16 @@ aside .hambuger-close i {
 
 aside .profile-photo {
   border-radius: 100%;
-  border: 2px solid white;
-  padding: 15px;
+  border: 4px solid white;
+  padding: 10px;
   width: 200px;
   height: 200px;
+}
+
+aside .profile-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
 }
 
 aside .contact-details {
