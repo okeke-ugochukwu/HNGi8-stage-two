@@ -282,6 +282,7 @@ main .projects-item-actBtns a {
   padding: 10px 30px;
   border-radius: 50px;
   font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 main .projects-item-actBtns a:hover {
