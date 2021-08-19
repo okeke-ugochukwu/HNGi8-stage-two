@@ -185,6 +185,7 @@ header {
 main {
     position: absolute;
 
+
     .section_header {
         padding: 20px 0px 5px;
     }
@@ -246,6 +247,7 @@ main {
                     display: block;
                     padding: 10px 30px;
                     border-radius: 50px;
+                    font-size: 16px;
 
                     &:hover {
                         transform: scale(1.1);
@@ -266,6 +268,10 @@ main {
     .certs {
         p {
             margin-bottom: 10px;
+
+            a {
+                color: hsl(265, 86%, 16%);
+            }
         }
     }
 
