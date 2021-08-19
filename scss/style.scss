@@ -23,7 +23,7 @@ h1, h2 {
     font-weight: 400;
 }
 .little_head {
-    font-weight: 500;
+    font-weight: 600;
 }
 .margin_box {
     width: 85%;
@@ -110,7 +110,7 @@ aside {
 
     .action-btn {
         position: absolute;
-        bottom: 30px;
+        bottom: 50px;
         width: 100%;
 
         a {
@@ -130,10 +130,6 @@ aside {
     }
 
 
-}
-
-* {
-    // outline: 1px solid;
 }
 
 header {
@@ -192,9 +188,7 @@ main {
 
     .projects {
 
-        #projects_header {
-            padding-bottom: 15px;
-        }
+     margin-top: 8px;
 
         &-item {
 
@@ -213,14 +207,94 @@ main {
             .id_gen {
                 background: linear-gradient(to bottom, hsla(265, 71%, 37%, 0.117),
                 hsla(265, 85%, 16%, 0.896)), url('../img/id_gen_1.png');
+                transition: 2s;
+
+                @keyframes bg-change {
+                    20% {
+                        background: linear-gradient(to bottom, hsla(265, 71%, 37%, 0.117),
+                        hsla(265, 85%, 16%, 0.896)), url('../img/id_gen_2.png');
+                        background-size: cover;
+                        background-position: center;
+                    }
+
+                    40% {
+                        background: linear-gradient(to bottom, hsla(265, 71%, 37%, 0.117),
+                        hsla(265, 85%, 16%, 0.896)), url('../img/id_gen_3.png');
+                        background-size: cover;
+                        background-position: center;
+                    }
+
+                    60% {
+                        background: linear-gradient(to bottom, hsla(265, 71%, 37%, 0.117),
+                        hsla(265, 85%, 16%, 0.896)), url('../img/id_gen_4.png');
+                        background-size: cover;
+                        background-position: center;
+                    }
+
+                    80% {
+                        background: linear-gradient(to bottom, hsla(265, 71%, 37%, 0.117),
+                        hsla(265, 85%, 16%, 0.896)), url('../img/id_gen_5.png');
+                        background-size: cover;
+                        background-position: center;
+                    }
+                }
+
+                &:hover {
+                     animation: 10s linear infinite bg-change;
+                }
             }
             .m_player {
                 background: linear-gradient(to bottom, hsla(265, 71%, 37%, 0.117),
                 hsla(265, 85%, 16%, 0.896)), url('../img/player_1.png');
+                transition: 2s;
+
+                @keyframes bg-change-2 {
+                    20% {
+                        background: linear-gradient(to bottom, hsla(265, 71%, 37%, 0.117),
+                        hsla(265, 85%, 16%, 0.896)), url('../img/player_2.png');
+                        background-size: cover;
+                        background-position: center;
+                    }
+
+                    80% {
+                        background: linear-gradient(to bottom, hsla(265, 71%, 37%, 0.117),
+                        hsla(265, 85%, 16%, 0.896)), url('../img/player_1.png');
+                        background-size: cover;
+                        background-position: center;
+                    }
+                }
+
+                &:hover {
+                    animation: 10s linear infinite bg-change-2;
+
+                }
             }
             .calc {
                 background: linear-gradient(to bottom, hsla(265, 71%, 37%, 0.117),
                 hsla(265, 85%, 16%, 0.896)), url('../img/calc.png');
+
+                transition: 2s;
+
+                @keyframes bg-change-3 {
+                    20% {
+                        background: linear-gradient(to bottom, hsla(265, 71%, 37%, 0.117),
+                        hsla(265, 85%, 16%, 0.896)),  url('../img/calc_2.png');
+                        background-size: cover;
+                        background-position: center;
+                    }
+
+                    80% {
+                        background: linear-gradient(to bottom, hsla(265, 71%, 37%, 0.117),
+                        hsla(265, 85%, 16%, 0.896)),  url('../img/calc.png');
+                        background-size: cover;
+                        background-position: center;
+                    }
+                }
+
+                &:hover {
+                    animation: 10s linear infinite bg-change-3;
+
+                }
             }
             .id_gen, .m_player, .calc {
                 background-size: cover;
@@ -277,4 +351,90 @@ main {
     }
 
     padding-bottom: 100px;
+}
+
+@media (min-width: 1064px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 18px;
+    }
+    h1, h2 {
+        color: hsl(265, 83%, 31%);
+    }
+
+    .regular {
+        font-size: 1.1em;
+    }
+
+
+    header {
+
+        img {
+            width: 70px;
+            height: 100%;
+        }
+
+    }
+
+    main {
+
+        .section {
+
+            &_item {
+                width: 30%;
+
+                &:first-child {
+                    margin-right: 50px;
+                }
+            }
+
+            &:nth-child(2) {
+                display: flex;
+
+                .section_ {
+                    padding-bottom: 30px;
+                }
+            }
+        }
+
+        .projects {
+            display: flex;
+            justify-content: space-between;
+
+            &-item {
+                width: 30%;
+                height: 380px;
+                position: relative;
+
+                &-actBtns {
+                    position: absolute;
+                    bottom: 0;
+                }
+
+            }
+
+        }
+        .certs {
+
+            display: flex;
+
+
+
+            .section {
+
+                &_item {
+                    width: 30%;
+                }
+            }
+        }
+
+        padding-bottom: 100px;
+    }
 }

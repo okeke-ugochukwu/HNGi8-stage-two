@@ -50,7 +50,7 @@ h1, h2 {
 }
 
 .little_head {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .margin_box {
@@ -134,7 +134,7 @@ aside .contact-details ul li .font-awesome {
 
 aside .action-btn {
   position: absolute;
-  bottom: 30px;
+  bottom: 50px;
   width: 100%;
 }
 
@@ -225,8 +225,8 @@ main .section_header {
   padding: 20px 0px 5px;
 }
 
-main .projects #projects_header {
-  padding-bottom: 15px;
+main .projects {
+  margin-top: 8px;
 }
 
 main .projects-item:not(:last-child) {
@@ -244,16 +244,151 @@ main .projects-item-image {
 main .projects-item .id_gen {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/id_gen_1.png");
   background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/id_gen_1.png");
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+@-webkit-keyframes bg-change {
+  20% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/id_gen_2.png");
+    background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/id_gen_2.png");
+    background-size: cover;
+    background-position: center;
+  }
+  40% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/id_gen_3.png");
+    background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/id_gen_3.png");
+    background-size: cover;
+    background-position: center;
+  }
+  60% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/id_gen_4.png");
+    background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/id_gen_4.png");
+    background-size: cover;
+    background-position: center;
+  }
+  80% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/id_gen_5.png");
+    background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/id_gen_5.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@keyframes bg-change {
+  20% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/id_gen_2.png");
+    background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/id_gen_2.png");
+    background-size: cover;
+    background-position: center;
+  }
+  40% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/id_gen_3.png");
+    background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/id_gen_3.png");
+    background-size: cover;
+    background-position: center;
+  }
+  60% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/id_gen_4.png");
+    background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/id_gen_4.png");
+    background-size: cover;
+    background-position: center;
+  }
+  80% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/id_gen_5.png");
+    background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/id_gen_5.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+main .projects-item .id_gen:hover {
+  -webkit-animation: 10s linear infinite bg-change;
+          animation: 10s linear infinite bg-change;
 }
 
 main .projects-item .m_player {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/player_1.png");
   background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/player_1.png");
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+@-webkit-keyframes bg-change-2 {
+  20% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/player_2.png");
+    background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/player_2.png");
+    background-size: cover;
+    background-position: center;
+  }
+  80% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/player_1.png");
+    background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/player_1.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@keyframes bg-change-2 {
+  20% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/player_2.png");
+    background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/player_2.png");
+    background-size: cover;
+    background-position: center;
+  }
+  80% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/player_1.png");
+    background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/player_1.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+main .projects-item .m_player:hover {
+  -webkit-animation: 10s linear infinite bg-change-2;
+          animation: 10s linear infinite bg-change-2;
 }
 
 main .projects-item .calc {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/calc.png");
   background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/calc.png");
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+@-webkit-keyframes bg-change-3 {
+  20% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/calc_2.png");
+    background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/calc_2.png");
+    background-size: cover;
+    background-position: center;
+  }
+  80% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/calc.png");
+    background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/calc.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@keyframes bg-change-3 {
+  20% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/calc_2.png");
+    background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/calc_2.png");
+    background-size: cover;
+    background-position: center;
+  }
+  80% {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/calc.png");
+    background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/calc.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+main .projects-item .calc:hover {
+  -webkit-animation: 10s linear infinite bg-change-3;
+          animation: 10s linear infinite bg-change-3;
 }
 
 main .projects-item .id_gen, main .projects-item .m_player, main .projects-item .calc {
@@ -301,4 +436,68 @@ main .certs p {
 
 main .certs p a {
   color: #23064c;
+}
+
+@media (min-width: 1064px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 18px;
+  }
+  h1, h2 {
+    color: #440d91;
+  }
+  .regular {
+    font-size: 1.1em;
+  }
+  header img {
+    width: 70px;
+    height: 100%;
+  }
+  main {
+    padding-bottom: 100px;
+  }
+  main .section_item {
+    width: 30%;
+  }
+  main .section_item:first-child {
+    margin-right: 50px;
+  }
+  main .section:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .section:nth-child(2) .section_ {
+    padding-bottom: 30px;
+  }
+  main .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .projects-item {
+    width: 30%;
+    height: 380px;
+    position: relative;
+  }
+  main .projects-item-actBtns {
+    position: absolute;
+    bottom: 0;
+  }
+  main .certs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .certs .section_item {
+    width: 30%;
+  }
 }
