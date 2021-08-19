@@ -49,6 +49,10 @@ h1, h2 {
   font-weight: 400;
 }
 
+.little_head {
+  font-weight: 500;
+}
+
 .margin_box {
   width: 85%;
   margin: auto;
@@ -128,6 +132,27 @@ aside .contact-details ul li .font-awesome {
   margin-right: 10px;
 }
 
+aside .action-btn {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+
+aside .action-btn a {
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: #23064c;
+  letter-spacing: .05em;
+  background: white;
+}
+
+aside .action-btn a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #eeee01;
+  color: #23064c;
+}
+
 header {
   width: 100%;
   display: -webkit-box;
@@ -193,8 +218,81 @@ header .hamburger-open div:not(:last-child) {
 
 main {
   position: absolute;
+  padding-bottom: 100px;
 }
 
 main .section_header {
-  padding: 10px 0px 5px;
+  padding: 20px 0px 5px;
+}
+
+main .projects #projects_header {
+  padding-bottom: 15px;
+}
+
+main .projects-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+main .projects-item-image {
+  width: 100%;
+  max-width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+main .projects-item .id_gen {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/id_gen_1.png");
+  background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/id_gen_1.png");
+}
+
+main .projects-item .m_player {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/player_1.png");
+  background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/player_1.png");
+}
+
+main .projects-item .calc {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 27, 161, 0.117)), to(rgba(35, 6, 75, 0.896))), url("../img/calc.png");
+  background: linear-gradient(to bottom, rgba(83, 27, 161, 0.117), rgba(35, 6, 75, 0.896)), url("../img/calc.png");
+}
+
+main .projects-item .id_gen, main .projects-item .m_player, main .projects-item .calc {
+  background-size: cover;
+  background-position: center;
+}
+
+main .projects-item-descr {
+  margin-bottom: 10px;
+}
+
+main .projects-item-actBtns button {
+  background: none;
+  border: none;
+}
+
+main .projects-item-actBtns button:first-child {
+  margin-right: 10px;
+}
+
+main .projects-item-actBtns a {
+  background: #23064c;
+  letter-spacing: .05em;
+  color: white;
+  display: block;
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+
+main .projects-item-actBtns a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main .projects-item-actBtns button:nth-child(2) a:hover {
+  background: #eeee01;
+  color: #23064c;
+}
+
+main .certs p {
+  margin-bottom: 10px;
 }
