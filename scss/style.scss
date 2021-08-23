@@ -446,3 +446,26 @@ main {
 }
 
 
+[data-aos="custom-flip-down"] {
+    backface-visibility: hidden;
+    transition-property: transform;
+    transition-delay: 0;
+    transform: perspective(2500px) rotateX(100deg);
+
+
+    &.aos-animate {
+        transform: perspective(2500px) rotateX(0);
+    }
+
+    @media screen and (min-width: 1064px) {
+        backface-visibility: hidden;
+        transition-property: transform;
+        transition-delay: 500ms;
+        transform: perspective(2500px) rotateX(100deg);
+
+      &.aos-animate {
+        transform: perspective(2500px) rotateX(0);
+      }
+    }
+
+  }
