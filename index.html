@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
         <meta name="description" content="Frontend Developer based in Eastern Nigeria">
         <meta name="keywords" content="Frontend, Developer, Nigeria, Javascript, HNG, Internship, Zuri">
@@ -136,7 +137,7 @@
         <main>
             <div class="margin_box">
                  <!-- Personal Profile -->
-                <section class="section">
+                <section class="section" data-aos="fade-up">
                     <div class="section_header">
                         <h2>
                             Personal Profile
@@ -153,10 +154,10 @@
 
 
                 <!-- Flexbox:, Edcation, Interests -->
-                <section class="section">
+                <section class="section" >
 
                     <!-- Education -->
-                    <div class="section_item">
+                    <div class="section_item" data-aos="fade-up" data-aos-delay="200">
                         <div class="section_header">
                             <h2>
                                 Education
@@ -176,7 +177,7 @@
                     </div>
 
                     <!-- Skills -->
-                    <div class="section_item">
+                    <div class="section_item" data-aos="fade-up" data-aos-delay="300">
                         <div class="section_header">
                             <h2>
                                 Skills
@@ -191,7 +192,7 @@
                     </div>
 
                      <!-- Interests -->
-                     <div class="section_item">
+                     <div class="section_item" data-aos="fade-up" data-aos-delay="400">
                         <div class="section_header">
                             <h2>
                                 Interests
@@ -210,7 +211,7 @@
 
                 <!--Projects -->
                 <section class="section">
-                    <div class="section_header " id="projects_header">
+                    <div class="section_header " id="projects_header" data-aos="fade-up" data-aos-delay="400">
                         <h2>
                             Projects
                         </h2>
@@ -218,7 +219,7 @@
 
                     <!-- Flexbox -->
                     <div class="projects">
-                        <div class="projects-item">
+                        <div class="projects-item" data-aos="flip-down" data-aos-delay="500">
                             <div class="projects-item-image id_gen">
 
                             </div>
@@ -245,7 +246,7 @@
 
                         </div>
 
-                        <div class="projects-item">
+                        <div class="projects-item" data-aos="flip-down" data-aos-delay="600">
                             <div class="projects-item-image m_player">
 
                             </div>
@@ -273,7 +274,7 @@
 
                         </div>
 
-                        <div class="projects-item">
+                        <div class="projects-item" data-aos="flip-down" data-aos-delay="700">
                             <div class="projects-item-image calc">
 
                             </div>
@@ -306,7 +307,7 @@
                 <!-- Flexbox: Courses & Certifications, Volunteers , Languages -->
                 <section class="section certs">
                     <!-- Courses & Certfications -->
-                    <div class="section_item">
+                    <div class="section_item" data-aos="fade-up">
                             <div class="section_header">
                                 <h2>
                                     Courses and Cerfications
@@ -344,7 +345,7 @@
                     </div>
 
                     <!-- Volunteers -->
-                    <div class="section_item">
+                    <div class="section_item" data-aos="fade-up">
                     <div class="section_header">
                         <h2>
                             Volunteers
@@ -385,5 +386,9 @@
         </main>
 
         <script type="text/javascript" src="js/script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
