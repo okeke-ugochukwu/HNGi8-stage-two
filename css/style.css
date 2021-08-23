@@ -90,10 +90,7 @@ aside .hambuger-close {
   position: absolute;
   right: 5%;
   top: 30px;
-}
-
-aside .hambuger-close i {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 aside .profile-photo {
@@ -206,7 +203,7 @@ header .site_title {
   height: max-content;
 }
 
-header .hamburger-open {
+header .burburger-open {
   position: absolute;
   right: 0;
   height: -webkit-max-content;
@@ -217,14 +214,14 @@ header .hamburger-open {
   width: max-content;
 }
 
-header .hamburger-open div {
+header .burburger-open div {
   width: 19px;
   height: 3px;
   background: #23064c;
   border-radius: 5px;
 }
 
-header .hamburger-open div:not(:last-child) {
+header .burburger-open div:not(:last-child) {
   margin-bottom: 5px;
 }
 
