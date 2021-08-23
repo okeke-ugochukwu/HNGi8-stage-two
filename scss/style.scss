@@ -17,7 +17,9 @@ h2 {
 h1, h2 {
     color: hsl(265, 83%, 31%);
 }
-
+p {
+    font-size: 1.1em;
+}
 .regular {
     font-size: .9em;
     font-weight: 400;
@@ -125,6 +127,8 @@ aside {
             color: hsl(265, 86%, 16%);
             letter-spacing: .05em;
             background: white;
+            font-weight: 600;
+            font-size: 1.1em;
 
             &:hover {
                 transform: scale(1.1);
@@ -396,13 +400,11 @@ main {
             &_item {
                 width: 30%;
 
-                &:first-child {
-                    margin-right: 50px;
-                }
             }
 
             &:nth-child(2) {
                 display: flex;
+                justify-content: space-around;
 
                 .section_ {
                     padding-bottom: 30px;
