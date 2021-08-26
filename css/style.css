@@ -524,8 +524,8 @@ main .certs p a {
 }
 
 [data-aos="custom-flip-down"].aos-animate {
-  -webkit-transform: perspective(2500px) rotateX(0);
-          transform: perspective(2500px) rotateX(0);
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
 }
 
 @media screen and (min-width: 1064px) {
