@@ -17,21 +17,27 @@ h2 {
 h1, h2 {
     color: hsl(265, 83%, 31%);
 }
+
 p {
     font-size: 1.1em;
 }
+
 .regular {
     font-size: .9em;
     font-weight: 400;
 }
+
 .little_head {
     font-weight: 600;
 }
+
 .margin_box {
     width: 85%;
     margin: auto;
     position: relative;
 }
+
+
 
 aside {
 
@@ -63,6 +69,8 @@ aside {
         right: 5%;
         top: 30px;
         font-size: 25px;
+
+
 
     }
 
@@ -167,7 +175,7 @@ header {
         height: max-content;
     }
 
-    .burburger-open {
+    .hamburger-open {
         position: absolute;
         right: 0;
         height: max-content;

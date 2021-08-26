@@ -203,7 +203,7 @@ header .site_title {
   height: max-content;
 }
 
-header .burburger-open {
+header .hamburger-open {
   position: absolute;
   right: 0;
   height: -webkit-max-content;
@@ -214,14 +214,14 @@ header .burburger-open {
   width: max-content;
 }
 
-header .burburger-open div {
+header .hamburger-open div {
   width: 19px;
   height: 3px;
   background: #23064c;
   border-radius: 5px;
 }
 
-header .burburger-open div:not(:last-child) {
+header .hamburger-open div:not(:last-child) {
   margin-bottom: 5px;
 }
 
